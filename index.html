@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inchara S Sathish | AI & ML Engineer Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Inchara S Sathish, B.Tech student in Artificial Intelligence and Machine Learning at REVA University. Exploring AI, ML, software engineering, and innovative technology solutions.">
+  <meta name="keywords" content="Inchara S Sathish, REVA University, AI Engineer, Machine Learning, Python, Software Engineer, Portfolio, Ignite India, Developer">
+  <meta name="author" content="Inchara S Sathish">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Inchara S Sathish | AI & ML Engineer Portfolio">
+  <meta property="og:description" content="Explore the projects, skills, and academic journey of Inchara S Sathish, specializing in AI & Machine Learning.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-progress-bar"></div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+  <!-- Particles Background Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">
+      Inchara <span>S Sathish</span>
+    </div>
+    <nav>
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#github" class="nav-link">GitHub</a>
+      <a href="#ai-hub" class="nav-link">AI Hub</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <span class="hero-subtitle">Welcome to my space</span>
+      <h1 class="hero-title">Hi, I'm <span>Inchara S Sathish</span></h1>
+      <div class="typing-text-wrapper">
+        I am a <span id="typing-text"></span><span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        A forward-thinking Artificial Intelligence & Machine Learning student and future software engineer, dedicated to solving complex problems and building innovative technical solutions.
+      </p>
+      <div class="hero-btns">
+        <a href="Profile.pdf" download="Inchara_S_Sathish_Resume.pdf" class="btn btn-primary">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <a href="#projects" class="btn btn-secondary">
+          View Projects
+        </a>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <div class="hero-circle-ambient"></div>
+      <div class="hero-img-container">
+        <img src="ai_banner.png" alt="Futuristic AI Illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-story">
+        <h3>My Journey</h3>
+        <p>
+          I am currently pursuing my B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at REVA University, Bengaluru (Class of 2025 - 2029).
+        </p>
+        <p>
+          My passion lies at the intersection of logical problem-solving and next-generation cognitive systems. I strive to understand not just the mechanics of algorithms, but how they can be scaled to build smart, real-world utility frameworks.
+        </p>
+        <p>
+          With a learning-focused mindset, I continuously explore new tech, participate in hackathons, and research solutions that bridge the gap between abstract computing models and user-centered design.
+        </p>
+      </div>
+      <div class="about-details">
+        <div class="about-card glass-panel">
+          <i class="fa-solid fa-brain"></i>
+          <h4>Specialization</h4>
+          <p>Artificial Intelligence & ML</p>
+        </div>
+        <div class="about-card glass-panel">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h4>Education</h4>
+          <p>REVA University Student</p>
+        </div>
+        <div class="about-card glass-panel">
+          <i class="fa-solid fa-lightbulb"></i>
+          <h4>Core Philosophy</h4>
+          <p>Continuous Learning & Innovation</p>
+        </div>
+        <div class="about-card glass-panel">
+          <i class="fa-solid fa-rocket"></i>
+          <h4>Career Goal</h4>
+          <p>Future Software Engineer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Dashboard -->
+  <section id="skills">
+    <h2 class="section-title">Skills Dashboard</h2>
+    <div class="skills-dashboard">
+      <div class="skills-categories">
+        <button class="skills-tab-btn active" data-category="all">All Skills</button>
+        <button class="skills-tab-btn" data-category="programming">Programming Languages</button>
+        <button class="skills-tab-btn" data-category="aiml">AI & Machine Learning</button>
+        <button class="skills-tab-btn" data-category="datascience">Data Science</button>
+        <button class="skills-tab-btn" data-category="web">Web Tech & Tools</button>
+        <button class="skills-tab-btn" data-category="soft">Soft Skills</button>
+      </div>
+      <div class="skills-grid" id="skills-container">
+        <!-- Rendered dynamically by index.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Timeline -->
+  <section id="education">
+    <h2 class="section-title">Education Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-panel">
+          <span class="timeline-date">Sept 2025 - 2029</span>
+          <h3 class="timeline-degree">B.Tech in Computer Science and Engineering</h3>
+          <h4 class="timeline-school">REVA University, Bengaluru</h4>
+          <p class="timeline-details">Specialization: Artificial Intelligence & Machine Learning. Focused on fundamentals of computing, data structures, algorithms, neural networks, and math for ML.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase -->
+  <section id="projects">
+    <h2 class="section-title">Projects Showcase</h2>
+    <div class="projects-header">
+      <div class="projects-search-filter">
+        <input type="text" class="projects-search-input" id="project-search" placeholder="Search projects by name, technology, or feature...">
+      </div>
+    </div>
+    <div class="projects-grid" id="projects-container">
+      <!-- Rendered dynamically by index.js -->
+    </div>
+  </section>
+
+  <!-- GitHub Analytics -->
+  <section id="github">
+    <h2 class="section-title">GitHub Analytics</h2>
+    <div class="github-analytics-grid">
+      <div class="github-stats-card glass-panel">
+        <h3 class="github-stats-title">
+          <i class="fa-brands fa-github"></i> github.com/incharassathish77-dotcom
+        </h3>
+        <div class="github-stats-list">
+          <div class="github-stat-item glass-panel">
+            <div class="github-stat-num" id="github-repo-count">5</div>
+            <div class="github-stat-label">Repositories</div>
+          </div>
+          <div class="github-stat-item glass-panel">
+            <div class="github-stat-num" id="github-contrib-count">124</div>
+            <div class="github-stat-label">Contributions This Year</div>
+          </div>
+        </div>
+        <div class="github-contrib-graph">
+          <!-- Dynamically generated placeholder graph simulating contribution activity -->
+          <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">Weekly Contribution Heatmap</div>
+          <div id="contribution-squares" style="display: flex; gap: 4px; justify-content: center; flex-wrap: wrap;"></div>
+        </div>
+      </div>
+      <div class="github-languages-card glass-panel">
+        <h3 class="github-stats-title"><i class="fa-solid fa-code"></i> Language Breakdown</h3>
+        <div class="lang-bars" id="github-languages-container">
+          <!-- Rendered dynamically by index.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Knowledge Hub -->
+  <section id="ai-hub">
+    <h2 class="section-title">AI Knowledge Hub</h2>
+    <div class="ai-hub-grid">
+      <div class="ai-hub-card glass-panel">
+        <h3 class="ai-hub-title"><i class="fa-solid fa-book-open"></i> AI Glossary & Trends</h3>
+        <div class="ai-glossary-list" id="ai-glossary">
+          <!-- Rendered dynamically by index.js -->
+        </div>
+      </div>
+      <div class="ai-hub-card glass-panel">
+        <h3 class="ai-hub-title"><i class="fa-solid fa-route"></i> AIML Learning Roadmap</h3>
+        <div class="ai-roadmap-timeline">
+          <div class="roadmap-step">
+            <div class="roadmap-num">1</div>
+            <div class="roadmap-content">
+              <h4>Foundations (Sem 1-2)</h4>
+              <p>Advanced Calculus, Linear Algebra, Programming in C/Python, Data Structures.</p>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <div class="roadmap-num">2</div>
+            <div class="roadmap-content">
+              <h4>Core Machine Learning (Sem 3-4)</h4>
+              <p>Statistical Methods, Classical ML models (Regression, SVMs, Trees), Feature Engineering.</p>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <div class="roadmap-num">3</div>
+            <div class="roadmap-content">
+              <h4>Deep Learning & AI (Sem 5-6)</h4>
+              <p>Neural Networks, CNNs for Vision, RNNs & Transformers for NLP, AI Frameworks (PyTorch, TensorFlow).</p>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <div class="roadmap-num">4</div>
+            <div class="roadmap-content">
+              <h4>Innovation & Deployment (Sem 7-8)</h4>
+              <p>MLOps, Edge AI, Capstone Project, Industry Internships, Creative Builder Initiatives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements & Certifications -->
+  <section id="achievements">
+    <h2 class="section-title">Achievements & Certifications</h2>
+    <div class="achievements-grid">
+      <div class="achievement-card glass-panel">
+        <div class="achievement-icon">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <h3 class="achievement-title">Ignite India 5.0 Program Certificate</h3>
+        <h4 class="achievement-issuer">Wadhwani Global Entrepreneur</h4>
+        <div class="achievement-date">Completed: Dec 09, 2025</div>
+        <p class="achievement-desc">
+          Completed 42 hours of rigorous coursework and assessments. Gained essential entrepreneurial skills including business ideation, customer validation, business modeling, and financial planning.
+        </p>
+      </div>
+      <div class="achievement-card glass-panel">
+        <div class="achievement-icon">
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <h3 class="achievement-title">B.Tech AIML Enrollment</h3>
+        <h4 class="achievement-issuer">REVA University</h4>
+        <div class="achievement-date">Enrolled: Sept 2025</div>
+        <p class="achievement-desc">
+          Admitted to REVA University for a specialized Bachelor of Technology program in Computer Science and Engineering (Artificial Intelligence and Machine Learning), prioritizing future-focused innovation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Email</h4>
+            <a href="mailto:incharassathish77@gmail.com">incharassathish77@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Phone</h4>
+            <p>9019265804</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Location</h4>
+            <p>Bengaluru, Karnataka, India</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/incharassathish77-dotcom" target="_blank" class="social-btn" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/inchara-s-sathish-034089368/" target="_blank" class="social-btn" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form glass-panel">
+        <form id="portfolio-contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-input" placeholder="Your Email Address" required>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-textarea" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-status" id="form-status-msg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Chat Widget -->
+  <div class="chat-widget">
+    <div class="chat-bubble" id="chat-bubble" aria-label="Open AI Chat Assistant">
+      <i class="fa-solid fa-robot"></i>
+      <div class="chat-bubble-ping"></div>
+    </div>
+    <div class="chat-window glass-panel" id="chat-window">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">AI</div>
+          <div class="chat-header-title">
+            <h4>Inchara's Assistant</h4>
+            <span>Online | Powered by AI</span>
+          </div>
+        </div>
+        <button class="chat-close-btn" id="chat-close" aria-label="Close Chat">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <div class="chat-message bot">
+          Hi! I'm Inchara's virtual assistant. Ask me anything about her skills, education, projects, or background!
+        </div>
+      </div>
+      <div class="chat-suggestions">
+        <button class="chat-suggest-btn" data-query="What is Inchara's education?">Education</button>
+        <button class="chat-suggest-btn" data-query="What projects has Inchara made?">Projects</button>
+        <button class="chat-suggest-btn" data-query="What programming languages does she know?">Programming Languages</button>
+      </div>
+      <div class="chat-footer">
+        <input type="text" class="chat-input" id="chat-input" placeholder="Type a message...">
+        <button class="chat-send-btn" id="chat-send" aria-label="Send message">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Inchara S Sathish. Built with passion & AI.</p>
+  </footer>
+
+  <!-- Script Logic -->
+  <script src="index.js"></script>
+</body>
+</html>
