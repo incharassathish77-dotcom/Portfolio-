@@ -309,6 +309,15 @@ document.addEventListener('DOMContentLoaded', () => {
       badge: 'Python/Web',
       github: 'https://github.com/incharassathish77-dotcom/python_mini_project',
       live: 'https://python-mini-project-three.vercel.app'
+    },
+    {
+      title: 'Portfolio-',
+      desc: 'A world-class, premium developer portfolio website built using vanilla HTML5, CSS3, and ES6+ JavaScript. Features glassmorphic cards, moving interactive canvas particles, a custom cursor, scroll progression tracking, dynamic theme shifting, and a chatbot helper assistant.',
+      tech: ['HTML5', 'CSS3', 'ES6 JavaScript', 'Canvas API'],
+      category: 'web-portfolio',
+      badge: 'Portfolio',
+      github: 'https://github.com/incharassathish77-dotcom/Portfolio-',
+      live: 'https://vercel.com/incharassathish77-6951s-projects/portfolio'
     }
   ];
 
