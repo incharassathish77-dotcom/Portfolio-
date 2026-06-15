@@ -536,4 +536,18 @@ document.addEventListener('DOMContentLoaded', () => {
       contactForm.reset();
     }, 1200);
   });
+
+  // ==========================================
+  // 12. Roadmap Growth Dashboard Animation
+  // ==========================================
+  const metricBars = document.querySelectorAll('.metric-bar-fill');
+  const animateRoadmapBars = () => {
+    metricBars.forEach(bar => {
+      const progress = bar.getAttribute('data-progress');
+      bar.style.width = `${progress}%`;
+    });
+  };
+
+  // Trigger bar animations shortly after DOM load
+  setTimeout(animateRoadmapBars, 600);
 });
